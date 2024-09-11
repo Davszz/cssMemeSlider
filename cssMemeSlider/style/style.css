@@ -4,14 +4,14 @@
 }
 
 body {
-    margin-top: 1rem;
+    box-sizing: border-box;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;    
+    width: 100%;
 }
 
 input {
@@ -21,11 +21,13 @@ input {
 .mems-slides {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    /* justify-content: center;
+    align-items: center; */
     border: 0.4rem rgb(221, 206, 206) solid;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.8);
+    padding: 0 1rem;
 }
 
 
@@ -33,10 +35,21 @@ input {
     display: flex;
     overflow-x: hidden;
     padding: 1rem 0;
+    width: 117vh;
+
+}
+
+.test {
+    flex: 0 0 100%;
+}
+
+img {
+    min-width: 100%;
+    height: 50vh;
 }
 
 .mem-pic {
-    width: 100%;
+    /* padding: 0vw 1vw 0 1vw; */
 }
 
 
@@ -48,8 +61,14 @@ input {
 .quote-mems {
     display: flex;
     overflow: hidden;
+    width: 32rem;
+    padding-bottom: 1rem;
 }
 
+.quote {
+    min-width: 32rem;
+    /* padding-left: 1rem; */
+}
 
 .radio-mems-btns {
     display: flex;
