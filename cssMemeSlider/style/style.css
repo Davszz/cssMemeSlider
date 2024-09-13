@@ -5,12 +5,15 @@
 
 body {
     box-sizing: border-box;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .wrapper {
     display: flex;
-    /* flex-direction: column;
-        align-items: center;
+    flex-direction: column;
+    /* align-items: center;
         width: 100%; */
     margin: 0 auto;
 
@@ -61,7 +64,7 @@ img {
 
 .navigation {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding-bottom: 1rem;
 }
@@ -101,6 +104,11 @@ label {
     transition: 0.4s ease-in-out;
 }
 
+.span-btn {
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 #mem-1:checked~.gif-slider {
     transform: translateX(0);
@@ -148,35 +156,35 @@ label {
 
 #mem-1:hover~.navigation .radio-mems-btns .memhover1 {
     background-color: gray;
-    border: 0.1rem black solid;
+    /* border: 0.1rem black solid; */
     width: 0.9rem;
     height: 0.9rem;
 }
 
 #mem-2:hover~.navigation .radio-mems-btns .memhover2 {
     background-color: gray;
-    border: 0.1rem black solid;
+    /* border: 0.1rem black solid; */
     width: 0.9rem;
     height: 0.9rem;
 }
 
 #mem-3:hover~.navigation .radio-mems-btns .memhover3 {
     background-color: gray;
-    border: 0.1rem black solid;
+    /* border: 0.1rem black solid; */
     width: 0.9rem;
     height: 0.9rem;
 }
 
 #mem-4:hover~.navigation .radio-mems-btns .memhover4 {
     background-color: gray;
-    border: 0.1rem black solid;
+    /* border: 0.1rem black solid; */
     width: 0.9rem;
     height: 0.9rem;
 }
 
 #mem-5:hover~.navigation .radio-mems-btns .memhover5 {
     background-color: gray;
-    border: 0.1rem black solid;
+    /* border: 0.1rem black solid; */
     width: 0.9rem;
     height: 0.9rem;
 }
@@ -280,4 +288,27 @@ label {
     width: 1rem;
     height: 1rem;
     border: none;
+}
+
+
+@media(max-width: 850px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .radio-mems-btns {
+        order: -1;
+        align-items: center;
+    }
+
+    .
+    /* .quote-mems {
+        width: 100%;
+    }
+
+    .quote {
+        width: 100%;
+    }
+ */
+
 }
