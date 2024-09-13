@@ -78,7 +78,7 @@ img {
 
 .quote {
     min-width: 33rem;
-    transition: 0.4s ease-in-out;
+    transition: 0.3s ease-in-out;
     /* padding-left: 1rem; */
 }
 
@@ -299,6 +299,7 @@ label {
     .radio-mems-btns {
         order: -1;
         align-items: center;
+        justify-content: center;
     }
 
 
